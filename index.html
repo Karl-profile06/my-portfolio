@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Karl James Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -18,26 +18,22 @@
   </ul>
 </nav>
 
-<main>
-  <section id="profile" tabindex="-1" aria-label="Profile section">
-    <img src="karl.jpg" alt="Profile picture of Karl James" />
-    <h2>Profile</h2>
-<p>Hi, I'm <strong>Karl James Fedillaga</strong> a dedicated student, curious learner, and creative thinker with a growing interest in technology.</p>
-<p>
-  This portfolio is a reflection of who I am, what I’ve accomplished, and the path I'm pursuing. I’m passionate about technology and always eager to learn and grow.
-</p>
-<div style="text-align: left;">
-  <p>
-    <strong>Age:</strong> 19<br>
-    <strong>Address:</strong> Ponduhan, Upper Becceril, Boljoon, Cebu<br>
-    <strong>Gender:</strong> Male<br>
-    <strong>Religion:</strong> Roman Catholic<br>
-    <strong>Civil Status:</strong> Single<br>
-    <strong>Height:</strong> 5'6"<br>
-    <strong>Weight:</strong> 54 kg
-  </p>
-</div>
+<main class="container" role="main" tabindex="-1">
 
+  <section id="profile" tabindex="-1" aria-label="Profile section">
+    <img src="karl.jpg" alt="Profile picture of Karl James" loading="lazy"  />
+    <h2>Karl James Fedillaga</h2>
+    <p>Hi, I'm a dedicated student, curious learner, and creative thinker with a growing interest in technology.</p>
+    <p>This portfolio is a reflection of who I am, what I’ve accomplished, and the path I'm pursuing. I’m passionate about technology and always eager to learn and grow.</p>
+    <div class="details" aria-label="Personal details">
+      <p><strong>Age:</strong> 19</p>
+      <p><strong>Address:</strong> Ponduhan, Upper Becceril, Boljoon, Cebu</p>
+      <p><strong>Gender:</strong> Male</p>
+      <p><strong>Religion:</strong> Roman Catholic</p>
+      <p><strong>Civil Status:</strong> Single</p>
+      <p><strong>Height:</strong> 5'6"</p>
+      <p><strong>Weight:</strong> 54 kg</p>
+    </div>
   </section>
 
   <section id="education" tabindex="-1" aria-label="Education section">
@@ -61,19 +57,25 @@
   <section id="projects" tabindex="-1" aria-label="Projects section">
     <h2>Projects</h2>
     <ul>
-      <li>🌐 Personal Portfolio Website using HTML, CSS, and JS</li>
+      <li>Personal Portfolio Website using HTML, CSS, and JS</li>
     </ul>
   </section>
 
   <section id="contacts" tabindex="-1" aria-label="Contacts section">
     <h2>Contacts</h2>
-    <p>Email: 
-      <a href="fedillaga.pmds2023@gmail.com">fedillaga.pmds2023@gmail.com</a>
-    </p>
-        <p>Mobile Number: 09945845836</p>
-</footer>
-    
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:fedillaga.pmds2023@gmail.com" aria-label="Email">fedillaga.pmds2023@gmail.com</a>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-phone"></i>
+      <span aria-label="Mobile Number">0994 584 5836</span>
+    </div>
+  </section>
 
-<script src="js.js"></script>
+</main>
+
 </body>
+<script href="js.js"></script>
+
 </html>
